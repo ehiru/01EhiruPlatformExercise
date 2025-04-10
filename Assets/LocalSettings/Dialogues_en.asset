@@ -31,6 +31,18 @@ MonoBehaviour:
       home.
     m_Metadata:
       m_Items: []
+  - m_Id: 2521712280199168
+    m_Localized: Vendor Energy Phantom
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2523356770328576
+    m_Localized: Egg waffles
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2523906597445632
+    m_Localized: Fish balls
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []

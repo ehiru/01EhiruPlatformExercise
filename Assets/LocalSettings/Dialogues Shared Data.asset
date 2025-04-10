@@ -27,6 +27,18 @@ MonoBehaviour:
     m_Key: lost_energy
     m_Metadata:
       m_Items: []
+  - m_Id: 2521712280199168
+    m_Key: Vendor Energy Phantom
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2523356770328576
+    m_Key: Egg waffles
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2523906597445632
+    m_Key: Fish balls
+    m_Metadata:
+      m_Items: []
   m_Metadata:
     m_Items: []
   m_KeyGenerator:

@@ -1,5 +1,3 @@
-
-
 using UnityEngine;
 using System.Collections;
 
@@ -19,7 +17,7 @@ public class Health : MonoBehaviour
     [Header("Components")]
     [SerializeField] private Behaviour[] components;
     private bool invulnerable;
- 
+
     [Header("Death Sound")]
     [SerializeField] private AudioClip deathSound;
     [SerializeField] private AudioClip hurtSound;
@@ -44,73 +42,17 @@ public class Health : MonoBehaviour
         else
         {
             if (!dead)
-{
-    // Deactivate all attached component classes
-    foreach (Behaviour component in components)
-    {
-        component.enabled = false;
-    }
+            {
+                //Deactivate all attached component classes
+                foreach (Behaviour component in components)
+                    component.enabled = false;
 
-    anim.SetBool("grounded", true);
-    anim.SetTrigger("die");
-    Debug.Log("Die trigger set");
+                anim.SetBool("grounded", true);
+                anim.SetTrigger("die");
 
-    // Player
-    if (GetComponent<PlayerMovement>() != null)
-    {
-        Debug.Log("PlayerMovement found and disabled");
-        GetComponent<PlayerMovement>().enabled = false;
-    }
-    else
-    {
-        Debug.LogWarning("PlayerMovement not found on this GameObject");
-    }
-
-    // Enemy
-    if (GetComponentInParent<EnemyPatrol>() != null)
-    {
-        Debug.Log("EnemyPatrol found and disabled");
-        GetComponentInParent<EnemyPatrol>().enabled = false;
-    }
-    else
-    {
-        Debug.LogWarning("EnemyPatrol not found on parent");
-    }
-
-    if (GetComponentInParent<MeleeEnemy>() != null)
-    {
-        Debug.Log("MeleeEnemy found and disabled");
-        GetComponentInParent<MeleeEnemy>().enabled = false;
-    }
-    else
-    {
-        Debug.LogWarning("MeleeEnemy not found on parent");
-    }
-     if (GetComponentInParent<Enemy_Sideways>() != null)
-    {
-        Debug.Log("EnemyPatrol found and disabled");
-        GetComponentInParent<Enemy_Sideways>().enabled = false;
-    }
-    else
-    {
-        Debug.LogWarning("EnemyPatrol not found on parent");
-    }
-
-    dead = true;
-    Debug.Log("Enemy marked as dead");
-
-    // Play death sound
-    if (SoundManager.instance != null)
-    {
-        SoundManager.instance.PlaySound(deathSound);
-        Debug.Log("Death sound played");
-    }
-    else
-    {
-        Debug.LogWarning("SoundManager not found");
-    }
-}
-
+                dead = true;
+                SoundManager.instance.PlaySound(deathSound);
+            }
         }
     }
     public void AddHealth(float _value)
@@ -143,12 +85,9 @@ public class Health : MonoBehaviour
         anim.ResetTrigger("die");
         anim.Play("Idle");
         StartCoroutine(Invunerability());
-        dead = false;
 
         //Activate all attached component classes
         foreach (Behaviour component in components)
             component.enabled = true;
     }
-
-    
 }

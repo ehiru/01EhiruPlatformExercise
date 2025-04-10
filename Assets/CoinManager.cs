@@ -1,21 +1,4 @@
-// using UnityEngine;
-// using UnityEngine.UI;
 
-// public class CoinManager : MonoBehaviour
-// {
-//     public int coinCount;
-//     public Text coinText;
-
-//     void Start()
-//     {
-
-//     }
-
-//     void Update()
-//     {
-//         coinText.text = "Coin Count: " + coinCount.ToString();
-//     }
-// }
 
 using UnityEngine.UI;
 using UnityEngine;
@@ -24,7 +7,8 @@ using UnityEngine;
 public class CoinManager : MonoBehaviour
 {
     public int coinCount;  // 讓 coinCount 保持 public
-    public Text coinText;  // 引入 TMP_Text 來顯示金幣數量
+    public Text coinText;
+  // 引入 TMP_Text 來顯示金幣數量
 
 
     void Update()
