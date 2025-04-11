@@ -36,7 +36,13 @@ MonoBehaviour:
     - Locale-en
     FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 3d392cea1a8774538b92cd670dc88ae5
-    m_Address: Dialogues_en
+    m_Address: FirstDialogues_en
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-en
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 4073fdd7cbb6f4eb397e319b13e59749
+    m_Address: "\u4EBA\u985Ecosplay_en"
     m_ReadOnly: 1
     m_SerializedLabels:
     - Locale-en
@@ -79,6 +85,12 @@ MonoBehaviour:
     FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 9c045014c75799144b1716f552861afe
     m_Address: Gender Sample_en
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-en
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: c6e4839d52e8e4dc88c640a0696c45c0
+    m_Address: Monk Energy Phantom_en
     m_ReadOnly: 1
     m_SerializedLabels:
     - Locale-en

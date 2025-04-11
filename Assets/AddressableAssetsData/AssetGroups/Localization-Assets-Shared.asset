@@ -17,6 +17,11 @@ MonoBehaviour:
     m_SerializedData: []
   m_GUID: be86bd3db40eb4b2a954d0701fde7173
   m_SerializeEntries:
+  - m_GUID: 0d749c0529dca48179f25617c93d86f5
+    m_Address: Assets/Monk Energy Phantom Shared Data.asset
+    m_ReadOnly: 1
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 1317265bd367bf24c8c9252ba14c8797
     m_Address: Assets/Samples/Localization/1.5.4/Smart Strings - Persistent Variables/String
       Table/Gender Sample Shared Data.asset
@@ -57,6 +62,11 @@ MonoBehaviour:
     FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 5f97e91332ae94e0c9fe92705598a6ed
     m_Address: "Assets/LocalSettings/\u66F4\u6539\u8A9E\u8A00 Shared Data.asset"
+    m_ReadOnly: 1
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 8515d1447ca9640a38a89501e4956367
+    m_Address: "Assets/\u4EBA\u985Ecosplay Shared Data.asset"
     m_ReadOnly: 1
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0

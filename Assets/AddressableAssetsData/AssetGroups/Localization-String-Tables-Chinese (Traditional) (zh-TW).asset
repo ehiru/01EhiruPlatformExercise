@@ -24,7 +24,7 @@ MonoBehaviour:
     - Locale-zh-TW
     FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 114747f75cd0d4fd799c794064813460
-    m_Address: Dialogues_zh-TW
+    m_Address: FirstDialogues_zh-TW
     m_ReadOnly: 1
     m_SerializedLabels:
     - Locale-zh-TW
@@ -49,6 +49,12 @@ MonoBehaviour:
     FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 6c89c7a6dfe87439a941e37f1f13734e
     m_Address: New Table_zh-TW
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-zh-TW
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 971623e1f128e4e8fb951970ab601f57
+    m_Address: "\u4EBA\u985Ecosplay_zh-TW"
     m_ReadOnly: 1
     m_SerializedLabels:
     - Locale-zh-TW
@@ -79,6 +85,12 @@ MonoBehaviour:
     FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: c961ee4b15f2b46d98640a59a9263f48
     m_Address: StringExampleTable_zh-TW
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-zh-TW
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: d76431bf2ad0f45bd9d1e98a51de534f
+    m_Address: Monk Energy Phantom_zh-TW
     m_ReadOnly: 1
     m_SerializedLabels:
     - Locale-zh-TW

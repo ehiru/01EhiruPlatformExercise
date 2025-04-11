@@ -1,10 +1,8 @@
-
 using System.Collections;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.Events;
 using UnityEngine.Localization;
-using UnityEngine.Localization.Settings;
 
 public class NPC : MonoBehaviour
 {
@@ -13,7 +11,7 @@ public class NPC : MonoBehaviour
     public Text dialogueText;
     public LocalizedString[] dialogues;
     private int index = 0;
-    
+
     [Header("UI Elements")]
     public GameObject contButton;
     public GameObject optionPanel;
@@ -29,19 +27,20 @@ public class NPC : MonoBehaviour
     private bool hasChosenOption = false;
     private string playerPrefKey;
 
+    private int score = 0; // ✅ 分數變數加在這
+
     private void Start()
     {
         optionPanel.SetActive(false);
         playerPrefKey = "NPC_DialogueChoice_" + gameObject.name;
-        
-        // 檢查玩家是否已選擇過選項
+
         if (PlayerPrefs.HasKey(playerPrefKey))
         {
             int savedChoice = PlayerPrefs.GetInt(playerPrefKey);
             ApplyDialogueChoice(savedChoice);
             hasChosenOption = true;
         }
-        
+
         for (int i = 0; i < optionButtons.Length; i++)
         {
             int capturedIndex = i;
@@ -51,7 +50,7 @@ public class NPC : MonoBehaviour
 
     private void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Return) && playerIsClose) 
+        if (Input.GetKeyDown(KeyCode.Return) && playerIsClose)
         {
             if (dialoguePanel.activeInHierarchy)
             {
@@ -83,13 +82,9 @@ public class NPC : MonoBehaviour
         else
         {
             if (hasChosenOption)
-            {
                 CloseDialogue();
-            }
             else
-            {
                 ShowOptions();
-            }
         }
     }
 
@@ -101,50 +96,70 @@ public class NPC : MonoBehaviour
 
         for (int i = 0; i < optionTexts.Length && i < optionButtons.Length; i++)
         {
+            int idx = i;
             optionTexts[i].GetLocalizedStringAsync().Completed += (handle) =>
             {
-                optionButtons[i].GetComponentInChildren<Text>().text = handle.Result;
+                optionButtons[idx].GetComponentInChildren<Text>().text = handle.Result;
             };
             optionButtons[i].gameObject.SetActive(true);
         }
     }
 
     public void OnOptionSelected(int optionIndex)
+{
+    if (hasChosenOption) return;
+
+    hasChosenOption = true;
+    optionPanel.SetActive(false);
+    StopAllCoroutines();
+    dialogueText.text = "";
+
+    if (optionIndex == 0)
     {
-        if (hasChosenOption) return;
-
-        hasChosenOption = true;
-        optionPanel.SetActive(false);
-        StopAllCoroutines();
-        dialogueText.text = "";
-
-        PlayerPrefs.SetInt(playerPrefKey, optionIndex);
-        PlayerPrefs.Save();
-        
-        ApplyDialogueChoice(optionIndex);
-        index = 0;
-        dialoguePanel.SetActive(true);
-        StartCoroutine(Typing());
+        score += 1;
+        Debug.Log("Player selected Egg Waffle (+1)");
     }
+    else if (optionIndex == 1)
+    {
+        score += 5;
+        Debug.Log("Player selected Fishball (+5)");
+    }
+
+    // 🔥 儲存分數進全域分數
+    int currentTotalScore = PlayerPrefs.GetInt("TotalScore", 0);
+    currentTotalScore += score;
+    PlayerPrefs.SetInt("TotalScore", currentTotalScore);
+    PlayerPrefs.Save();
+
+    Debug.Log("Total Score: " + currentTotalScore);
+
+    PlayerPrefs.SetInt(playerPrefKey, optionIndex);
+
+    ApplyDialogueChoice(optionIndex);
+    index = 0;
+    dialoguePanel.SetActive(true);
+    StartCoroutine(Typing());
+}
+
 
     private void ApplyDialogueChoice(int optionIndex)
     {
-        if (optionIndex == 0)  
-        {
-            dialogues = new LocalizedString[] 
-            {
-                new LocalizedString { TableReference = "Dialogues", TableEntryReference = "soft_thing" },
-                new LocalizedString { TableReference = "Dialogues", TableEntryReference = "spherical_objects" },
-                new LocalizedString { TableReference = "Dialogues", TableEntryReference = "lost_energy" }
-            };
-        }
-        else if (optionIndex == 1)  
+        if (optionIndex == 0)
         {
             dialogues = new LocalizedString[]
             {
-                new LocalizedString { TableReference = "Dialogues", TableEntryReference = "bouncy_texture" },
-                new LocalizedString { TableReference = "Dialogues", TableEntryReference = "beef_balls" },
-                new LocalizedString { TableReference = "Dialogues", TableEntryReference = "lost_energy" }
+                new LocalizedString { TableReference = "FirstDialogues", TableEntryReference = "soft_thing" },
+                new LocalizedString { TableReference = "FirstDialogues", TableEntryReference = "spherical_objects" },
+                new LocalizedString { TableReference = "FirstDialogues", TableEntryReference = "lost_energy" }
+            };
+        }
+        else if (optionIndex == 1)
+        {
+            dialogues = new LocalizedString[]
+            {
+                new LocalizedString { TableReference = "FirstDialogues", TableEntryReference = "bouncy_texture" },
+                new LocalizedString { TableReference = "FirstDialogues", TableEntryReference = "beef_balls" },
+                new LocalizedString { TableReference = "FirstDialogues", TableEntryReference = "lost_energy" }
             };
         }
     }
@@ -186,8 +201,6 @@ public class NPC : MonoBehaviour
     }
 }
 
-
-
 // using System.Collections;
 // using UnityEngine;
 // using UnityEngine.UI;
@@ -200,14 +213,14 @@ public class NPC : MonoBehaviour
 //     [Header("Dialogue System")]
 //     public GameObject dialoguePanel;
 //     public Text dialogueText;
-//     public LocalizedString[] dialogues;  // 使用 LocalizedString 陣列存放對話
+//     public LocalizedString[] dialogues;
 //     private int index = 0;
-
+    
 //     [Header("UI Elements")]
 //     public GameObject contButton;
 //     public GameObject optionPanel;
 //     public Button[] optionButtons;
-//     public LocalizedString[] optionTexts;  // 選項文字也使用 LocalizedString
+//     public LocalizedString[] optionTexts;
 //     public float wordSpeed = 0.05f;
 //     public bool playerIsClose = false;
 
@@ -216,11 +229,21 @@ public class NPC : MonoBehaviour
 //     public OptionEvent onOptionSelected;
 
 //     private bool hasChosenOption = false;
+//     private string playerPrefKey;
 
 //     private void Start()
 //     {
 //         optionPanel.SetActive(false);
-
+//         playerPrefKey = "NPC_DialogueChoice_" + gameObject.name;
+        
+//         // 檢查玩家是否已選擇過選項
+//         if (PlayerPrefs.HasKey(playerPrefKey))
+//         {
+//             int savedChoice = PlayerPrefs.GetInt(playerPrefKey);
+//             ApplyDialogueChoice(savedChoice);
+//             hasChosenOption = true;
+//         }
+        
 //         for (int i = 0; i < optionButtons.Length; i++)
 //         {
 //             int capturedIndex = i;
@@ -297,7 +320,17 @@ public class NPC : MonoBehaviour
 //         StopAllCoroutines();
 //         dialogueText.text = "";
 
-//         // 設定新的對話內容
+//         PlayerPrefs.SetInt(playerPrefKey, optionIndex);
+//         PlayerPrefs.Save();
+        
+//         ApplyDialogueChoice(optionIndex);
+//         index = 0;
+//         dialoguePanel.SetActive(true);
+//         StartCoroutine(Typing());
+//     }
+
+//     private void ApplyDialogueChoice(int optionIndex)
+//     {
 //         if (optionIndex == 0)  
 //         {
 //             dialogues = new LocalizedString[] 
@@ -316,10 +349,6 @@ public class NPC : MonoBehaviour
 //                 new LocalizedString { TableReference = "Dialogues", TableEntryReference = "lost_energy" }
 //             };
 //         }
-
-//         index = 0;
-//         dialoguePanel.SetActive(true);
-//         StartCoroutine(Typing());
 //     }
 
 //     public void CloseDialogue()
@@ -357,4 +386,7 @@ public class NPC : MonoBehaviour
 //             CloseDialogue();
 //         }
 //     }
+
+    
 // }
+
