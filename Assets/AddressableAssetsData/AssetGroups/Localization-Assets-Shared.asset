@@ -17,8 +17,18 @@ MonoBehaviour:
     m_SerializedData: []
   m_GUID: be86bd3db40eb4b2a954d0701fde7173
   m_SerializeEntries:
+  - m_GUID: 06d7890883921478aa2e8de6d8855902
+    m_Address: "Assets/\u7684\u58EB\u53F8\u6A5F\u80FD\u91CF\u5E7B\u5F71 Shared Data.asset"
+    m_ReadOnly: 1
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 0d749c0529dca48179f25617c93d86f5
     m_Address: Assets/Monk Energy Phantom Shared Data.asset
+    m_ReadOnly: 1
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 11f43e392fc5e491b8b0d2d4831107b4
+    m_Address: Assets/I got scolded Shared Data.asset
     m_ReadOnly: 1
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
@@ -44,6 +54,11 @@ MonoBehaviour:
     m_ReadOnly: 1
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 3b2b50b3b4d0245b28b71118e3494001
+    m_Address: "Assets/\u4E0A\u73ED\u65CF Shared Data.asset"
+    m_ReadOnly: 1
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 46b937f07e1274d8580782407fe3945a
     m_Address: Assets/LocalSettings/Tables/New Table 1 Shared Data.asset
     m_ReadOnly: 1
@@ -65,6 +80,16 @@ MonoBehaviour:
     m_ReadOnly: 1
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 70270003602eb4f239207a4ced972b01
+    m_Address: Assets/10-12hours Shared Data.asset
+    m_ReadOnly: 1
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 7e5d7b683664c4dd7b1f00a5a720a2ab
+    m_Address: Assets/SecondDialogues Shared Data.asset
+    m_ReadOnly: 1
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 8515d1447ca9640a38a89501e4956367
     m_Address: "Assets/\u4EBA\u985Ecosplay Shared Data.asset"
     m_ReadOnly: 1
@@ -80,8 +105,43 @@ MonoBehaviour:
     m_ReadOnly: 1
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 9ce54108da98a4d87a3ab6889e3f93bd
+    m_Address: Assets/if you have a car Shared Data.asset
+    m_ReadOnly: 1
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 9db90ee59762b440395f7d8c3c483fb0
+    m_Address: Assets/Recently,work has been really stressful. Shared Data.asset
+    m_ReadOnly: 1
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: a0505211a6e1941c0be58833abb0d184
+    m_Address: Assets/ThirdDialogues Shared Data.asset
+    m_ReadOnly: 1
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: d0d931a20e92a443ead9bfc57e91e908
     m_Address: Assets/LocalSettings/Tables/GameStart Shared Data.asset
+    m_ReadOnly: 1
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: d4d88d8a704234ad7a84e72048bf8c5c
+    m_Address: Assets/Sould I take a break Shared Data.asset
+    m_ReadOnly: 1
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: d5b72aa93ab4e41e9806fbe98e70ad17
+    m_Address: Assets/60-year-old Shared Data.asset
+    m_ReadOnly: 1
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: e320018788a44494c8606d67a8b4b85e
+    m_Address: Assets/9 am to 10 pm Shared Data.asset
+    m_ReadOnly: 1
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: e7d04a472956a48d0b8f89dd568d500c
+    m_Address: Assets/across the sea Shared Data.asset
     m_ReadOnly: 1
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0

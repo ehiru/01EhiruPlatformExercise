@@ -17,6 +17,24 @@ MonoBehaviour:
     m_SerializedData: []
   m_GUID: 340f7994115994791b83098ab2e340e4
   m_SerializeEntries:
+  - m_GUID: 040b1e9fba185446580c0d36e6e35d8e
+    m_Address: 10-12hours_en
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-en
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 0ed44feed05bf4bc7922cc27f5ba2a49
+    m_Address: ThirdDialogues_en
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-en
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 106f26a51c24d464992005ad39748375
+    m_Address: 9 am to 10 pm_en
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-en
+    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 24b9a05dd4b394938b35dc0e0d1dbafe
     m_Address: Is there a problem with me coming out_en
     m_ReadOnly: 1
@@ -31,6 +49,12 @@ MonoBehaviour:
     FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 2d410901f3e20479a97c34b2d070d9fb
     m_Address: New Table 1_en
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-en
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 30ec3db401dac4f189d35edc6b1e9f58
+    m_Address: "\u7684\u58EB\u53F8\u6A5F\u80FD\u91CF\u5E7B\u5F71_en"
     m_ReadOnly: 1
     m_SerializedLabels:
     - Locale-en
@@ -53,14 +77,32 @@ MonoBehaviour:
     m_SerializedLabels:
     - Locale-en
     FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 5b8202c13c8614df7831e93c107dee61
+    m_Address: Recently,work has been really stressful._en
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-en
+    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 6685511d58a05408c8c904ddc50186d1
     m_Address: New Table_en
     m_ReadOnly: 1
     m_SerializedLabels:
     - Locale-en
     FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 68f9a4139ebc248a7afe4cf680b98a8b
+    m_Address: I got scolded_en
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-en
+    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 79709e5c52a204c80abed371b38bf905
     m_Address: What are you looking at_en
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-en
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 799d0c4917fae46a0b4b357879d54fdf
+    m_Address: Sould I take a break_en
     m_ReadOnly: 1
     m_SerializedLabels:
     - Locale-en
@@ -77,6 +119,12 @@ MonoBehaviour:
     m_SerializedLabels:
     - Locale-en
     FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 96daadd1106dd4d83a08d4f0ee3b0249
+    m_Address: if you have a car_en
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-en
+    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 98fe4d141870240808e9d766ed814094
     m_Address: GameStart_en
     m_ReadOnly: 1
@@ -89,14 +137,38 @@ MonoBehaviour:
     m_SerializedLabels:
     - Locale-en
     FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: c04d5a463cc744177b6b43013f5de86d
+    m_Address: "\u4E0A\u73ED\u65CF_en"
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-en
+    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: c6e4839d52e8e4dc88c640a0696c45c0
     m_Address: Monk Energy Phantom_en
     m_ReadOnly: 1
     m_SerializedLabels:
     - Locale-en
     FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: c990e159abc744bf4aa33922a7716d48
+    m_Address: across the sea_en
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-en
+    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: d63f388c128984fff81cddaebac42c04
     m_Address: StringExampleTable_en
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-en
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: ebbddc1e268db4db786c9b78b2fd15fc
+    m_Address: SecondDialogues_en
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-en
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: f39818f60e04d42d18c0ec4594d12e41
+    m_Address: 60-year-old_en
     m_ReadOnly: 1
     m_SerializedLabels:
     - Locale-en

@@ -29,8 +29,32 @@ MonoBehaviour:
     m_SerializedLabels:
     - Locale-zh-TW
     FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 1b051756f9dbf4ef8a165928ff4bee25
+    m_Address: across the sea_zh-TW
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-zh-TW
+    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 1ce69bc7f121544fb8016ee3a491e2f8
     m_Address: Start_zh-TW
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-zh-TW
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 34da046c740444879aae9b1cac574f52
+    m_Address: Recently,work has been really stressful._zh-TW
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-zh-TW
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 3605b8798c4e64eb28ac76c0fb75fc39
+    m_Address: ThirdDialogues_zh-TW
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-zh-TW
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 38d58ecbea39548d7bea2d688b970c50
+    m_Address: if you have a car_zh-TW
     m_ReadOnly: 1
     m_SerializedLabels:
     - Locale-zh-TW
@@ -47,8 +71,26 @@ MonoBehaviour:
     m_SerializedLabels:
     - Locale-zh-TW
     FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 5adc4239c7aa24a87b5a2523fabf207e
+    m_Address: SecondDialogues_zh-TW
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-zh-TW
+    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 6c89c7a6dfe87439a941e37f1f13734e
     m_Address: New Table_zh-TW
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-zh-TW
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 7806225de9b2f4977aef239b67e9a6ea
+    m_Address: 9 am to 10 pm_zh-TW
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-zh-TW
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 8fbcd1890f003460c865576925332034
+    m_Address: 10-12hours_zh-TW
     m_ReadOnly: 1
     m_SerializedLabels:
     - Locale-zh-TW
@@ -59,8 +101,20 @@ MonoBehaviour:
     m_SerializedLabels:
     - Locale-zh-TW
     FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 9e681d8942d0e42a882d8481af991401
+    m_Address: I got scolded_zh-TW
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-zh-TW
+    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: a6d0951d557714dc68851bc0d69e5b7b
     m_Address: "\u66F4\u6539\u8A9E\u8A00_zh-TW"
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-zh-TW
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: bb18c2fb8491d40bd972bc74ca631d86
+    m_Address: Sould I take a break_zh-TW
     m_ReadOnly: 1
     m_SerializedLabels:
     - Locale-zh-TW
@@ -89,6 +143,18 @@ MonoBehaviour:
     m_SerializedLabels:
     - Locale-zh-TW
     FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: d38e2ab86229c400a81b3de45ec05672
+    m_Address: "\u7684\u58EB\u53F8\u6A5F\u80FD\u91CF\u5E7B\u5F71_zh-TW"
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-zh-TW
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: d622130d7650e4d899702da859142df3
+    m_Address: "\u4E0A\u73ED\u65CF_zh-TW"
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-zh-TW
+    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: d76431bf2ad0f45bd9d1e98a51de534f
     m_Address: Monk Energy Phantom_zh-TW
     m_ReadOnly: 1
@@ -97,6 +163,12 @@ MonoBehaviour:
     FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: eb50e7384ecdd4dce804dc1b8966419b
     m_Address: GameStart_zh-TW
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-zh-TW
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: f820ca1c72c2d4929a83843c9b436b6d
+    m_Address: 60-year-old_zh-TW
     m_ReadOnly: 1
     m_SerializedLabels:
     - Locale-zh-TW
