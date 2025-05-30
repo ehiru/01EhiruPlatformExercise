@@ -48,26 +48,43 @@ public class NPC : MonoBehaviour
         }
     }
 
-    private void Update()
+  private void Update()
+{
+    if (Input.GetKeyDown(KeyCode.Return) && playerIsClose)
     {
-        if (Input.GetKeyDown(KeyCode.Return) && playerIsClose)
+        if (dialoguePanel.activeInHierarchy)
         {
-            if (dialoguePanel.activeInHierarchy)
+            // 如果打字動畫完成，Enter 就是「繼續」
+            if (dialogueText.text == dialogues[index].GetLocalizedString())
             {
-                CloseDialogue();
+                NextLine();
             }
             else
             {
-                dialoguePanel.SetActive(true);
-                StartCoroutine(Typing());
+                // 如果還在打字中，就快速顯示完整對話
+                StopAllCoroutines();
+                dialogueText.text = dialogues[index].GetLocalizedString();
             }
         }
-
-        if (dialogueText.text == dialogues[index].GetLocalizedString())
+        else
         {
-            contButton.SetActive(true);
+            // 開啟對話面板並開始打字
+            dialoguePanel.SetActive(true);
+            StartCoroutine(Typing());
         }
     }
+
+    // 顯示繼續按鈕條件不變（維持原本功能）
+    if (dialogueText.text == dialogues[index].GetLocalizedString())
+    {
+        contButton.SetActive(true);
+    }
+    else
+    {
+        contButton.SetActive(false); // 預防提早顯示
+    }
+}
+
 
     public void NextLine()
     {

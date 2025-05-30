@@ -13,7 +13,7 @@ public class CoinManager : MonoBehaviour
 
     void Update()
     {
-        coinText.text = "Coin Count: " + coinCount.ToString();
+        coinText.text = "Energy Count : " + coinCount.ToString();
     }
 
 

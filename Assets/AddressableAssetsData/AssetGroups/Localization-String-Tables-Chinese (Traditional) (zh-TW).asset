@@ -41,6 +41,12 @@ MonoBehaviour:
     m_SerializedLabels:
     - Locale-zh-TW
     FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 1d7dbb1b1296c4788b84dd70236cc39b
+    m_Address: Quit_zh-TW
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-zh-TW
+    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 34da046c740444879aae9b1cac574f52
     m_Address: Recently,work has been really stressful._zh-TW
     m_ReadOnly: 1
@@ -85,6 +91,12 @@ MonoBehaviour:
     FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 7806225de9b2f4977aef239b67e9a6ea
     m_Address: 9 am to 10 pm_zh-TW
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-zh-TW
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 8f983a41507334865b1db659f52864d3
+    m_Address: HowToPlay_zh-TW
     m_ReadOnly: 1
     m_SerializedLabels:
     - Locale-zh-TW

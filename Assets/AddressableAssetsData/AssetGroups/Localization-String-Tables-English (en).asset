@@ -119,6 +119,12 @@ MonoBehaviour:
     m_SerializedLabels:
     - Locale-en
     FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 8aab8e3d89eda4dee88d3caf1f0bfe63
+    m_Address: HowToPlay_en
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-en
+    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 96daadd1106dd4d83a08d4f0ee3b0249
     m_Address: if you have a car_en
     m_ReadOnly: 1
@@ -133,6 +139,12 @@ MonoBehaviour:
     FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 9c045014c75799144b1716f552861afe
     m_Address: Gender Sample_en
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-en
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: a7d4e17340b9b4e40a9e0ba75a1c7b9f
+    m_Address: Quit_en
     m_ReadOnly: 1
     m_SerializedLabels:
     - Locale-en

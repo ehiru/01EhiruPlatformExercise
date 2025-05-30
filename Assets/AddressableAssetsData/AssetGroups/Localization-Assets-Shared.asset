@@ -44,6 +44,11 @@ MonoBehaviour:
     m_ReadOnly: 1
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 2d764dd40e1f848b2a2e4ebd536e752a
+    m_Address: Assets/Quit Shared Data.asset
+    m_ReadOnly: 1
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 2f22456aea64843d9907629f7a0efa0d
     m_Address: Assets/Table/Start Shared Data.asset
     m_ReadOnly: 1
@@ -77,6 +82,11 @@ MonoBehaviour:
     FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 5f97e91332ae94e0c9fe92705598a6ed
     m_Address: "Assets/LocalSettings/\u66F4\u6539\u8A9E\u8A00 Shared Data.asset"
+    m_ReadOnly: 1
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 63a1e95d5e9b64a6d8d2c2fbf869dd1a
+    m_Address: Assets/HowToPlay Shared Data.asset
     m_ReadOnly: 1
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
